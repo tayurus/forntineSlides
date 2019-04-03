@@ -2,18 +2,20 @@
 
 
 .slide {
-  max-width: 1920px;
+  max-width: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   flex-direction: column;
   font-family: 'Orbitron';
   background: #0f131a url('./images/bg.png') repeat-y center / 100%;
+  max-height: 100vh;
 }
 
 .slide__top {
   width: 100%;
   display: flex;
+  height: 28vh;
   justify-content: space-around;
   align-items: flex-start;
   background: url('./images/slide__top-bg.png') no-repeat center top / contain;
@@ -28,8 +30,7 @@
 
 .slide__bottom {
   width: 100%;
-  max-height: 173px;
-  height: 100vh;
+  height: 28vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -41,12 +42,12 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: #fefefe;
-  font-size: 44px;
+  font-size: 2vw;
   text-transform: uppercase;
   color: transparent;
   font-weight: 700;
   position: relative;
-  top: 24px;
+  top: 2.3vw;
   white-space: nowrap;
 }
 
@@ -97,8 +98,8 @@
 }
 
 .slide__top-logo {
-  width: 231px;
-  height: 219px;
+  width: 10vw;
+  height: 10vw;
   background: url('./images/logo.png') no-repeat center / contain;
 }
 
@@ -111,8 +112,9 @@
 .slide__content {
   margin-top: 40px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   width: 100%;
+  height: 70vh;
   justify-content: space-around;
 }
 
@@ -124,8 +126,9 @@
 }
 
 .slide__graph {
-  max-width:643px;
-  width:50%;
+  max-width: 39%;
+  height: 100%;
+  object-fit: contain;
   margin-right: 30px;
   margin-left: 50px;
 }
@@ -144,6 +147,8 @@
   margin: 0;
   width: 50%;
   margin-right: 50px;
+  max-height: calc(100vh - 400px);
+  overflow: auto;
 }
 
 @media (max-width:767px) {
@@ -179,7 +184,7 @@
 .slide__game-name {
   text-shadow: 0 0 8px rgba(0, 174, 255, 0.58);
   color: #fefefe;
-  font-size: 29px;
+  font-size: 1.5vw;
   font-weight: 900;
   text-transform: uppercase;
 }
@@ -204,7 +209,7 @@
 
 .slide__game-points {
   text-shadow: 0 0 8px rgba(255, 60, 0, 0.58);
-  font-size: 33px;
+  font-size: 1.7vw;
   font-weight: 900;
   color: #ffe451;
 }
