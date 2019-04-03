@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+.slide {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Orbitron';
+}
+
+.slide__top {
+  display: flex;
+  align-items: flex-start;
+}
+
+.slide__top-label {
+  background-image: linear-gradient(to left, #5bc3ee 0%, #a9e1f7 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: #fefefe;
+  font-size: 44px;
+  text-transform: uppercase;
+  color: transparent;
+  font-weight: 700;
+}
+
+.slide__top-logo {
+  width: 231px;
+  height: 219px;
+  background: url('./images/logo.png') no-repeat center / contain;
+}
+
+.slide__content {
+  display: flex;
+  align-items: center;
+}
