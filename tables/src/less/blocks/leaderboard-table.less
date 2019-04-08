@@ -26,7 +26,7 @@
     height: 15vh;
     width: 11vw;
     background: url('../images/leaderboard-table/logo.png') no-repeat center / contain;
-    margin-right: 20vw;
+    margin-right: 15vw;
   }
 
   &__fortnite {
@@ -44,8 +44,8 @@
   &__time {
     color: #ffffff;
     text-transform: uppercase;
-    line-height: 7vh;
-    font-size: 9vh;
+    line-height: 6vh;
+    font-size: 7vh;
     margin-right: 2vh;
   }
 
@@ -53,8 +53,8 @@
     color: #ffffff;
     font-weight: 400;
     text-transform: uppercase;
-    line-height: 5.5vh;
-    font-size: 6.9vh;
+    line-height: 4.5vh;
+    font-size: 5.5vh;
   }
 
   &__header-row {
@@ -90,17 +90,16 @@
       }
     }
 
-
-
   }
 
   &__th {
-    font-size: 5vh;
+    font-size: 4.5vh;
     padding-top: 1.5vh;
     padding-bottom: 1.5vh;
     line-height: 4.5vh;
     text-transform: uppercase;
     color: #75f7ff;
+    letter-spacing: -.2vh;
 
     &_player {
       padding-left: 2.5vh;
@@ -190,10 +189,15 @@
 
     &_player {
       padding-left: 4vh;
+      padding-right: 6vh;
 
       @media (max-width: 767px) {
         padding-left: 50%;
       }
+    }
+
+    &_center {
+      padding-right: 4vh;
     }
   }
 

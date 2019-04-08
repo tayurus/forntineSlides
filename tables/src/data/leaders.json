@@ -3,52 +3,62 @@
     {
       "rank" : "1",
       "player" : "SMOKEDSHIP",
-      "flag" : "ru"
+      "flag" : "ru",
+      "centerName" : "xxHitmanNoobxx"
     },
     {
       "rank" : "2",
       "player" : "Kankicks",
-      "flag" : "ua"
+      "flag" : "ua",
+      "centerName" : "xxHitmanNoobxx"
     },
     {
       "rank" : "3",
       "player" : "PsychoAnalyzer8",
-      "flag" : "gr"
+      "flag" : "gr",
+      "centerName" : "xxHitmanNoobxx"
     },
     {
       "rank" : "4",
       "player" : "Ross412",
-      "flag" : "ge"
+      "flag" : "ge",
+      "centerName" : "xxHitmanNoobxx"
     },
     {
       "rank" : "5",
       "player" : "Killer576",
-      "flag" : "us"
+      "flag" : "us",
+      "centerName" : "xxHitmanNoobxx"
     },
     {
       "rank" : "6",
       "player" : "Joker_x_Joker",
-      "flag" : "kz"
+      "flag" : "kz",
+      "centerName" : "xxHitmanNoobxx"
     },
     {
       "rank" : "7",
       "player" : "Ninja_Sotgun",
-      "flag" : "pl"
+      "flag" : "pl",
+      "centerName" : "xxHitmanNoobxx"
     },
     {
       "rank" : "8",
       "player" : "ChickenDinnerxx",
-      "flag" : "jp"
+      "flag" : "jp",
+      "centerName" : "xxHitmanNoobxx"
     },
     {
       "rank" : "9",
       "player" : "RogueStar",
-      "flag" : "as"
+      "flag" : "as",
+      "centerName" : "xxHitmanNoobxx"
     },
     {
       "rank" : "10",
       "player" : "xxHitmanNoobxx",
-      "flag" : "ru"
+      "flag" : "ru",
+      "centerName" : "xxHitmanNoobxx"
     }
   ]
 }
