@@ -1,0 +1,54 @@
+{
+  "leaders" : [
+    {
+      "rank" : "1",
+      "player" : "SMOKEDSHIP",
+      "flag" : "ru"
+    },
+    {
+      "rank" : "2",
+      "player" : "Kankicks",
+      "flag" : "ua"
+    },
+    {
+      "rank" : "3",
+      "player" : "PsychoAnalyzer8",
+      "flag" : "gr"
+    },
+    {
+      "rank" : "4",
+      "player" : "Ross412",
+      "flag" : "ge"
+    },
+    {
+      "rank" : "5",
+      "player" : "Killer576",
+      "flag" : "us"
+    },
+    {
+      "rank" : "6",
+      "player" : "Joker_x_Joker",
+      "flag" : "kz"
+    },
+    {
+      "rank" : "7",
+      "player" : "Ninja_Sotgun",
+      "flag" : "pl"
+    },
+    {
+      "rank" : "8",
+      "player" : "ChickenDinnerxx",
+      "flag" : "jp"
+    },
+    {
+      "rank" : "9",
+      "player" : "RogueStar",
+      "flag" : "as"
+    },
+    {
+      "rank" : "10",
+      "player" : "xxHitmanNoobxx",
+      "flag" : "en"
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+.leaderboard-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 5px;
+  text-align: left;
+
+  &__header-row {
+    background-image: linear-gradient(to right, #9242ff 0%, #5fc5ff 50%, #9242ff 100%);
+    background-attachment:fixed;
+
+    th:first-child {
+      padding-left: 10px;
+    }
+
+    @media (max-width: 767px) {
+      display: none !important;
+    }
+
+  }
+
+
+  &__row{
+
+    @media (min-width: 767px) {
+      &:hover td {
+        background: tomato;
+      }
+    }
+
+
+    &:nth-child(2) {
+      td {
+        font-size: 38px;
+
+        @media (max-width:992px) {
+          font-size: 28px;
+        }
+      }
+
+      td:first-child {
+        text-transform: uppercase;
+        font-size: 42px;
+
+        @media (max-width:992px) {
+          font-size: 25px;
+        }
+      }
+    }
+
+
+
+  }
+
+  &__th {
+    height: 94px;
+    font-family: "Burbank Big Condensed";
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #75f7ff;
+
+    &_player {
+      padding-left: 28px;
+    }
+
+    @media (max-width:992px) {
+      font-size: 30px;
+    }
+  }
+
+  &__td {
+    vertical-align: middle;
+    color: #ffffff;
+    font-family: "Burbank Big Condensed";
+    font-size: 29px;
+    font-weight: 700;
+    background: #8b35ff;
+    min-height: 40px;
+    height: 43px;
+
+    @media (max-width:992px) {
+      font-size: 21px;
+    }
+
+    &_rank {
+      background: #2fe7f8;
+      color: #291c46;
+      text-align: center;
+      text-transform: lowercase;
+      width: 75px;
+
+      @media (max-width: 767px) {
+        width: auto;
+        text-align: left;
+      }
+    }
+
+    &_rank-first, &_rank-second, &_rank-third {
+      font-family: "Brandon Grotesque - Black";
+      font-size: 40px !important;
+      font-weight: 400;
+      color: #fffdff;
+      line-height: 0;
+      position: relative;
+      text-shadow: -5px 0px 0px #8B35FF, 4px 0px 0px #8B35FF, 2px 2px 0px #8B35FF, -4px -2px 0px #8B35FF, -4px 2px 0px #8B35FF, 2px -3px 0px #8B35FF;
+
+      &:after {
+        position: absolute;
+        content: 'st';
+        font-family: "Brandon Grotesque - Black";
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #fffdff;
+        top: 15px;
+        text-shadow: -5px 0px 0px #8B35FF, 3px 0px 0px #8B35FF, 2px 2px 0px #8B35FF, -4px -2px 0px #8B35FF, -4px 1px 0px #8B35FF, 2px -2px 0px #8B35FF;
+
+        @media (max-width:767px) {
+          margin-left: 17px;
+        }
+      }
+    }
+
+    &_rank-second:after {
+      content: 'nd';
+      text-transform: lowercase;
+      font-size: 17px;
+
+      @media (max-width:767px) {
+        margin-left: 25px !important;
+      }
+    }
+
+    &_rank-third:after {
+      content: 'rd';
+      text-transform: lowercase;
+      font-size: 17px;
+
+      @media (max-width:767px) {
+        margin-left: 25px !important;
+      }
+    }
+
+    &_player {
+      padding-left: 28px;
+
+      @media (max-width: 767px) {
+        padding-left: 50%;
+      }
+    }
+  }
+
+
+
+  /*!!!!!!!!!!!!!! RESPONSIVE !!!!!!!!!!!!!!!!*/
+  @media (max-width: 767px) {
+
+  	/* Force table to not be like tables anymore */
+  	table, thead, tbody, th, tr {
+  		display: block;
+  	}
+
+  	/* Hide table headers (but not display: none;, for accessibility) */
+  	thead tr {
+  		position: absolute;
+  		top: -9999px;
+  		left: -9999px;
+  	}
+
+  	tr { border: 1px solid #ccc; }
+
+  	td {
+  		display: flex;
+      align-items: center;
+  		border: none;
+  		border-bottom: 1px solid #eee;
+  		position: relative;
+  		padding-left: 50%;
+  	}
+
+  	td:before {
+  		/* Now like a table header */
+  		position: absolute;
+  		/* Top/left values mimic padding */
+  		top: 6px;
+  		left: 6px;
+  		width: 45%;
+  		padding-right: 10px;
+  		white-space: nowrap;
+  	}
+
+  	/*
+  	Label the data
+  	*/
+    td:before {
+      text-shadow: none;
+      color: inherit;
+      top: auto;
+    }
+
+  	td:nth-of-type(1):before { content: "Rank"; }
+  	td:nth-of-type(2):before { content: "Player"; }
+  	td:nth-of-type(3):before { content: "Games played"; }
+  	td:nth-of-type(4):before { content: "Wins"; }
+  	td:nth-of-type(5):before { content: "Win Ratio"; }
+  	td:nth-of-type(6):before { content: "Kills"; }
+  	td:nth-of-type(7):before { content: "Top 10 Finishes"; }
+  	td:nth-of-type(8):before { content: "Top 3 Finishes"; }
+  	td:nth-of-type(9):before { content: "Score"; }
+  }
+
+}
