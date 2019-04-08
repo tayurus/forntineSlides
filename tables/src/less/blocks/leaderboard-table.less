@@ -1,21 +1,66 @@
+
+.leaderboard-table__wrapper * {
+  font-family: "Bebas Neue Bold";
+}
+
 .leaderboard-table__wrapper {
   max-height: 100vh;
   min-height: 100vh;
 }
 
 .leaderboard-table {
-  width: 100%;
+  width: 97%;
   border-collapse: separate;
-  border-spacing: 0 5px;
+  border-spacing: 0 1vh;
   text-align: left;
 
+  &__top {
+    display: flex;
+    align-items: center;
+    padding-top: 2vh;
+    margin-bottom: 1vh;
+    margin-left: 4vh;
+  }
+
+  &__logo {
+    height: 15vh;
+    width: 11vw;
+    background: url('../images/leaderboard-table/logo.png') no-repeat center / contain;
+    margin-right: 20vw;
+  }
+
+  &__fortnite {
+    width: 10vw;
+    height: 4vh;
+    margin: 0 auto 3vh auto;
+    background: url('../images/leaderboard-table/fortnite.png') no-repeat center / contain;
+  }
+
+  &__info-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__time {
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 7vh;
+    font-size: 9vh;
+    margin-right: 2vh;
+  }
+
+  &__title {
+    color: #ffffff;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 5.5vh;
+    font-size: 6.9vh;
+  }
+
   &__header-row {
-    background-image: linear-gradient(to right, #9242ff 0%, #5fc5ff 50%, #9242ff 100%);
+    background-image: linear-gradient(to left, #9242ff 0%, #5fc5ff 50%, #9242ff 100%);
     background-attachment:fixed;
 
-    th:first-child {
-      padding-left: 10px;
-    }
 
     @media (max-width: 767px) {
       display: none !important;
@@ -26,28 +71,21 @@
 
   &__row{
 
-    @media (min-width: 767px) {
-      &:hover td {
-        background: tomato;
-      }
-    }
-
-
     &:nth-child(2) {
       td {
-        font-size: 38px;
+        font-size: 5vh;
 
         @media (max-width:992px) {
-          font-size: 28px;
+          font-size: 4vh;
         }
       }
 
       td:first-child {
         text-transform: uppercase;
-        font-size: 42px;
+        font-size: 6vh;
 
         @media (max-width:992px) {
-          font-size: 25px;
+          font-size: 4vh;
         }
       }
     }
@@ -57,34 +95,40 @@
   }
 
   &__th {
-    height: 94px;
-    font-family: "Burbank Big Condensed";
-    font-size: 38px;
-    font-weight: 700;
+    font-size: 5vh;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    line-height: 4.5vh;
     text-transform: uppercase;
     color: #75f7ff;
 
     &_player {
-      padding-left: 28px;
+      padding-left: 2.5vh;
     }
 
     @media (max-width:992px) {
-      font-size: 30px;
+      font-size: 4vh;
     }
   }
 
   &__td {
     vertical-align: middle;
     color: #ffffff;
-    font-family: "Burbank Big Condensed";
-    font-size: 29px;
+    font-size: 4vh;
     font-weight: 700;
     background: #8b35ff;
-    min-height: 40px;
-    height: 43px;
 
     @media (max-width:992px) {
-      font-size: 21px;
+      font-size: 3vh;
+    }
+
+    &_country {
+      min-width: 5vh;
+      max-width: 5vh;
+      background-repeat: no-repeat;
+      background-size: 60%;
+      background-position: center;
+      background-color: transparent;
     }
 
     &_rank {
@@ -92,7 +136,7 @@
       color: #291c46;
       text-align: center;
       text-transform: lowercase;
-      width: 75px;
+      width: 7vh;
 
       @media (max-width: 767px) {
         width: auto;
@@ -101,8 +145,7 @@
     }
 
     &_rank-first, &_rank-second, &_rank-third {
-      font-family: "Brandon Grotesque - Black";
-      font-size: 40px !important;
+      font-size: 5.5vh !important;
       font-weight: 400;
       color: #fffdff;
       line-height: 0;
@@ -112,16 +155,15 @@
       &:after {
         position: absolute;
         content: 'st';
-        font-family: "Brandon Grotesque - Black";
-        font-size: 14px;
+        font-size: 2vh;
         font-weight: 400;
         text-transform: uppercase;
         color: #fffdff;
-        top: 15px;
+        top: 2vh;
         text-shadow: -5px 0px 0px #8B35FF, 3px 0px 0px #8B35FF, 2px 2px 0px #8B35FF, -4px -2px 0px #8B35FF, -4px 1px 0px #8B35FF, 2px -2px 0px #8B35FF;
 
         @media (max-width:767px) {
-          margin-left: 17px;
+          margin-left: 2vh;
         }
       }
     }
@@ -129,25 +171,25 @@
     &_rank-second:after {
       content: 'nd';
       text-transform: lowercase;
-      font-size: 17px;
+      font-size: 2vh;
 
       @media (max-width:767px) {
-        margin-left: 25px !important;
+        margin-left: 3vh !important;
       }
     }
 
     &_rank-third:after {
       content: 'rd';
       text-transform: lowercase;
-      font-size: 17px;
+      font-size: 2vh;
 
       @media (max-width:767px) {
-        margin-left: 25px !important;
+        margin-left: 3vh !important;
       }
     }
 
     &_player {
-      padding-left: 28px;
+      padding-left: 4vh;
 
       @media (max-width: 767px) {
         padding-left: 50%;

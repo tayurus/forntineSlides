@@ -1,6 +1,6 @@
 {% macro leaderboard_table(leadersData, type, time, title) %}
 
-<div class="leaderboard-table__wrapper">
+<div class="leaderboard-table__wrapper leaderboard-table__wrapper_{{type}}">
 
   <div class="leaderboard-table__top">
     <div class="leaderboard-table__logo"></div>
@@ -18,13 +18,14 @@
       <th class="leaderboard-table__th"></th>
       <th class="leaderboard-table__th">RANK</th>
       <th class="leaderboard-table__th leaderboard-table__th_player">PLAYER</th>
+      <th class="leaderboard-table__th">CENTER <br/> NAME</th>
       <th class="leaderboard-table__th">GAMES <br /> PLAYED</th>
       <th class="leaderboard-table__th">WINS</th>
-      <th class="leaderboard-table__th">WIN <br /> RATIO</th>
       <th class="leaderboard-table__th">KILLS</th>
+      <th class="leaderboard-table__th">TOP 5 <br /> FINISHES</th>
       <th class="leaderboard-table__th">TOP 10 <br /> FINISHES</th>
-      <th class="leaderboard-table__th">TOP 3 <br /> FINISHES</th>
-      <th class="leaderboard-table__th">SCORE</th>
+      <th class="leaderboard-table__th">TOP 25 <br /> FINISHES</th>
+      <th class="leaderboard-table__th">POINTS</th>
     </tr>
 
     {% for leader in leadersData %}
@@ -35,6 +36,7 @@
         {{leader.rank}}
       </td>
       <td class="leaderboard-table__td leaderboard-table__td_player">{{leader.player}}</td>
+      <td class="leaderboard-table__td">1000</td>
       <td class="leaderboard-table__td">1000</td>
       <td class="leaderboard-table__td">1000</td>
       <td class="leaderboard-table__td">1000</td>
