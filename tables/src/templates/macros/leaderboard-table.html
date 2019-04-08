@@ -15,7 +15,6 @@
 
   <table class="leaderboard-table">
     <tr class="leaderboard-table__header-row">
-      <th class="leaderboard-table__th"></th>
       <th class="leaderboard-table__th">RANK</th>
       <th class="leaderboard-table__th leaderboard-table__th_player">PLAYER</th>
       <th class="leaderboard-table__th">CENTER <br/> NAME</th>
@@ -30,9 +29,9 @@
 
     {% for leader in leadersData %}
     <tr class="leaderboard-table__row">
-      <td class="leaderboard-table__td leaderboard-table__td_country flag-icon-{{leader.flag}}"></td>
-      <td
-        class="leaderboard-table__td leaderboard-table__td_rank {{'leaderboard-table__td_rank-first' if leader.rank == '1'}} {{'leaderboard-table__td_rank-second' if leader.rank == '2'}} {{'leaderboard-table__td_rank-third' if leader.rank == '3'}}">
+
+      <td class="leaderboard-table__td leaderboard-table__td_rank {{'leaderboard-table__td_rank-first' if leader.rank == '1'}} {{'leaderboard-table__td_rank-second' if leader.rank == '2'}} {{'leaderboard-table__td_rank-third' if leader.rank == '3'}}">
+        <span class="leaderboard-table__country flag-icon-{{leader.flag}}"></span>
         {{leader.rank}}
       </td>
       <td class="leaderboard-table__td leaderboard-table__td_player">{{leader.player}}</td>
