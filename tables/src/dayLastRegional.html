@@ -1,0 +1,13 @@
+{% extends "./templates/decorators/_base.html"  %}
+{% from './templates/macros/leaderboard-table.html' import leaderboard_table %}
+
+
+{% block page_title %}
+
+{% endblock %}
+
+{% block page_body %}
+
+  {{leaderboard_table(leaders, '1', 'yesterday', 'REGIONAL  LEADER BOARD')}}
+
+{% endblock %}
