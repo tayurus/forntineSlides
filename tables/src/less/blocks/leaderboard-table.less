@@ -13,6 +13,7 @@
   border-collapse: separate;
   border-spacing: 0 1vh;
   text-align: left;
+  padding-left: 7vh;
 
   &__top {
     display: flex;
@@ -100,6 +101,7 @@
     text-transform: uppercase;
     color: #75f7ff;
     letter-spacing: -.2vh;
+    text-shadow: 2px 2px 0 #003658, -2px 2px 0 #003658, 2px -2px 0 #003658, -2px -2px 0 #003658;
 
     &_player {
       padding-left: 2.5vh;
@@ -113,16 +115,18 @@
   &__country {
     min-width: 5vh;
     max-width: 5vh;
+    height: 5vh;
     position: absolute;
-    left: -4vh;
-    display: none;
+    left: -6vh;
+    top: 50%;
+    transform: translateY(-50%);
     background-repeat: no-repeat;
-    background-size: 60%;
+    background-size: 100%;
     background-position: center;
-    background-color: transparent;
   }
 
   &__td {
+    position: relative;
     vertical-align: middle;
     color: #ffffff;
     font-size: 4vh;
@@ -140,6 +144,7 @@
       text-align: center;
       text-transform: lowercase;
       width: 7vh;
+      font-family: "Brandon Grotesque";
 
       @media (max-width: 767px) {
         width: auto;
@@ -147,24 +152,32 @@
       }
     }
 
+    &_rank-first {
+      text-shadow: 3px 3px 0 #ffddc9, -3px 3px 0 #ffddc9, 3px -3px 0 #ffddc9,  -3px -3px 0 #ffddc9;
+      font-size: 7.5vh !important;
+      text-align: left;
+      padding-left: 1vh;
+      &:after {
+        text-shadow: 2px 2px 0 #ffddc9, -2px 2px 0 #ffddc9, 2px -2px 0 #ffddc9,  -2px -2px 0 #ffddc9;
+      }
+    }
+
     &_rank-first, &_rank-second, &_rank-third {
-      font-size: 5.5vh !important;
+      font-size: 5.5vh;
       font-weight: 400;
       color: #fffdff;
       line-height: 0;
       position: relative;
-      text-shadow: -5px 0px 0px #8B35FF, 4px 0px 0px #8B35FF, 2px 2px 0px #8B35FF, -4px -2px 0px #8B35FF, -4px 2px 0px #8B35FF, 2px -3px 0px #8B35FF;
 
       &:after {
         position: absolute;
         content: 'st';
-        font-size: 2vh;
+        font-size: 3vh;
         font-weight: 400;
-        text-transform: uppercase;
-        color: #fffdff;
-        top: 2vh;
-        text-shadow: -5px 0px 0px #8B35FF, 3px 0px 0px #8B35FF, 2px 2px 0px #8B35FF, -4px -2px 0px #8B35FF, -4px 1px 0px #8B35FF, 2px -2px 0px #8B35FF;
-
+        color: #291c46;
+        top: 1.5vh;
+        text-transform: lowercase;
+        // font-family: "Bebas Neue Bold";
         @media (max-width:767px) {
           margin-left: 2vh;
         }

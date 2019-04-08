@@ -5,24 +5,25 @@
     background-image: linear-gradient(to right, #46277f 0%, #325c7f 50%, #46277f 100%);
   }
 
+  .leaderboard-table__row:nth-child(2) {
+    .leaderboard-table__td:nth-child(n + 2) {
+      text-shadow: 3px 3px 0 #7a3e77, -3px 3px 0 #7a3e77, 3px -3px 0 #7a3e77,  -3px -3px 0 #7a3e77;
+    }
+  }
+
   .leaderboard-table__row:nth-child(2), .leaderboard-table__row:nth-child(3), .leaderboard-table__row:nth-child(4){
     background-image: linear-gradient(to right, #ff6e42 0%, #c15fff 50%, #ff6e42 100%);
+    box-shadow: 0 0 29px rgba(84, 204, 249, 0.76), inset 0 0 9px rgba(255, 39, 0, 0.5);
 
     .leaderboard-table__td {
       background-color: transparent;
     }
 
-    .leaderboard-table__td:nth-child(2) {
+    .leaderboard-table__td:nth-child(1) {
+      background: #ff5937;
       color: #291c46;
     }
 
-    .leaderboard-table__td:nth-child(2) {
-      background: #ff5937;
-    }
-
-    .leaderboard-table__td:nth-child(n + 2) {
-      // box-shadow: 0px 10px 5px rgba(84, 204, 249, 0.76), 0px -10px 5px rgba(84, 204, 249, 0.76);
-    }
   }
 
 }
