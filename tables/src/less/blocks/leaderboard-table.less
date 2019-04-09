@@ -74,27 +74,16 @@
 
   }
 
+  .leaderboard-table__row:nth-child(3) {
+    .leaderboard-table__td:nth-child(n + 2) .td-inner {
+      font-size: 5.5vh;
+    }
+  }
+
 
   &__row {
     box-shadow: 0 0 3px rgba(57, 23, 103, 0.6);
-    &:nth-child(3) {
-      td {
-        font-size: 5rem;
 
-        @media (max-width:992px) {
-          font-size: 4rem;
-        }
-      }
-
-      td:first-child {
-        text-transform: uppercase;
-        font-size: 6rem;
-
-        @media (max-width:992px) {
-          font-size: 4rem;
-        }
-      }
-    }
 
     &_empty {
       background: none !important;
@@ -141,10 +130,18 @@
   &__td {
     position: relative;
     vertical-align: middle;
-    color: #ffffff;
-    font-size: 4rem;
+
     font-weight: 700;
     background: #8b35ff;
+
+    .td-inner {
+      height: 5.5vh;
+      color: #ffffff;
+      font-size: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
     @media (max-width:992px) {
       font-size: 3rem;
@@ -155,12 +152,13 @@
       height: 2rem;
     }
 
-    &_rank {
+    &_rank .td-inner {
       background: #2fe7f8;
       color: #291c46;
       text-align: center;
       text-transform: lowercase;
       width: 7rem;
+      font-size: 4.5rem;
       font-family: "Brandon Grotesque";
 
       @media (max-width: 767px) {
@@ -169,20 +167,21 @@
       }
     }
 
-    &_rank-first {
+    &_rank-first .td-inner{
       text-shadow: 3px 3px 0 #ffddc9, -3px 3px 0 #ffddc9, 3px -3px 0 #ffddc9,  -3px -3px 0 #ffddc9;
-      font-size: 7.5rem !important;
+      font-size: 6rem !important;
       &:after {
+        right: 1.5rem !important;
         text-shadow: 2px 2px 0 #ffddc9, -2px 2px 0 #ffddc9, 2px -2px 0 #ffddc9,  -2px -2px 0 #ffddc9;
       }
     }
 
-    &_rank-first, &_rank-second, &_rank-third {
+    &_rank-first .td-inner, &_rank-second .td-inner, &_rank-third .td-inner {
       font-size: 5.5rem;
-      font-weight: 400;
       color: #fffdff;
       line-height: 0;
       position: relative;
+      justify-content: flex-start;
       text-align: left;
       padding-left: 1rem;
 
@@ -193,28 +192,28 @@
         font-weight: 400;
         color: #291c46;
         top: 1.5rem;
+        right: .9rem;
         text-transform: lowercase;
-        // font-family: "Bebas Neue Bold";
         @media (max-width:767px) {
           margin-left: 2rem;
         }
       }
     }
 
-    &_rank-second:after {
+    &_rank-second .td-inner:after {
       content: 'nd';
       text-transform: lowercase;
-      font-size: 2rem;
+      font-size: 2.5rem;
 
       @media (max-width:767px) {
         margin-left: 3rem !important;
       }
     }
 
-    &_rank-third:after {
+    &_rank-third .td-inner:after {
       content: 'rd';
       text-transform: lowercase;
-      font-size: 2rem;
+      font-size: 2.5rem;
 
       @media (max-width:767px) {
         margin-left: 3rem !important;

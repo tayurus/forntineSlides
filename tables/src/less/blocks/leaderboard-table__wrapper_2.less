@@ -5,18 +5,18 @@
     background-image: linear-gradient(to right, #9242ff 0%, #ffaa5f 50%, #9242ff 100%);
   }
 
-  .leaderboard-table__td_rank {
+  .leaderboard-table__td_rank .td-inner {
     background: #ffbc55;
     color: #fff;
     text-shadow: 2px 2px 0 #2f0058, -2px 2px 0 #2f0058, 2px -2px 0 #2f0058, -2px -2px 0 #2f0058;
   }
 
-  .leaderboard-table__td_rank-first {
+  .leaderboard-table__td_rank-first .td-inner {
     text-shadow: 3px 3px 0 #ffddc9, -3px 3px 0 #ffddc9, 3px -3px 0 #ffddc9, -3px -3px 0 #ffddc9;
   }
 
-  .leaderboard-table__td_rank-second,
-  .leaderboard-table__td_rank-third {
+  .leaderboard-table__td_rank-second .td-inner,
+  .leaderboard-table__td_rank-third .td-inner {
     text-shadow: none !important;
   }
 
@@ -26,7 +26,7 @@
   }
 
   .leaderboard-table__row:nth-child(3) {
-    .leaderboard-table__td:nth-child(n + 2) {
+    .leaderboard-table__td:nth-child(n + 2) .td-inner {
       text-shadow: 3px 3px 0 #7a3e77, -3px 3px 0 #7a3e77, 3px -3px 0 #7a3e77, -3px -3px 0 #7a3e77, 2.5px 2.5px 0 #7a3e77, -2.5px 2.5px 0 #7a3e77, 2.5px -2.5px 0 #7a3e77, -2.5px -2.5px 0 #7a3e77;
     }
   }
@@ -41,7 +41,7 @@
       background-color: transparent;
     }
 
-    .leaderboard-table__td:nth-child(1) {
+    .leaderboard-table__td:nth-child(1) .td-inner {
       background: #ff5937;
       color: #291c46;
     }

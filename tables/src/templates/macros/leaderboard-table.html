@@ -38,17 +38,17 @@
 
       <td class="leaderboard-table__td leaderboard-table__td_rank {{'leaderboard-table__td_rank-first' if leader.rank == '1'}} {{'leaderboard-table__td_rank-second' if leader.rank == '2'}} {{'leaderboard-table__td_rank-third' if leader.rank == '3'}}">
         <span class="leaderboard-table__country flag-icon-{{leader.flag}}"></span>
-        {{leader.rank}}
+        <div class="td-inner">{{leader.rank}}</div>
       </td>
-      <td class="leaderboard-table__td leaderboard-table__td_player">{{leader.player}}</td>
-      <td class="leaderboard-table__td leaderboard-table__td_center">{{leader.centerName}}</td>
-      <td class="leaderboard-table__td">1000</td>
-      <td class="leaderboard-table__td">1000</td>
-      <td class="leaderboard-table__td">1000</td>
-      <td class="leaderboard-table__td">1000</td>
-      <td class="leaderboard-table__td">1000</td>
-      <td class="leaderboard-table__td">1000</td>
-      <td class="leaderboard-table__td">1000</td>
+      <td class="leaderboard-table__td leaderboard-table__td_player"><div class="td-inner">{{leader.player}}</div></td>
+      <td class="leaderboard-table__td leaderboard-table__td_center"><div class="td-inner">{{leader.centerName}}</div></td>
+      <td class="leaderboard-table__td"><div class="td-inner">1000</div></td>
+      <td class="leaderboard-table__td"><div class="td-inner">1000</div></td>
+      <td class="leaderboard-table__td"><div class="td-inner">1000</div></td>
+      <td class="leaderboard-table__td"><div class="td-inner">1000</div></td>
+      <td class="leaderboard-table__td"><div class="td-inner">1000</div></td>
+      <td class="leaderboard-table__td"><div class="td-inner">1000</div></td>
+      <td class="leaderboard-table__td"><div class="td-inner">1000</div></td>
     </tr>
     {% endfor %}
 

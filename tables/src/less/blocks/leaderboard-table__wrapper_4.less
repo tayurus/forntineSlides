@@ -2,8 +2,13 @@
   background: url('../images/leaderboard-table/bg4.png') no-repeat center / cover;
 
   .leaderboard-table__time {
-    text-shadow: 0 0 4rem #bd54f9, 1rem 1rem 4rem #bd54f9, -1rem 1rem 4rem #bd54f9, 1rem -1rem 4rem #bd54f9, -1rem -1rem 4rem #bd54f9;
-    text-transform: uppercase;
+        text-shadow: 3rem 0 4rem #bd54f9, 2rem 1rem 4rem #bd54f9, 2rem 1rem 4rem #bd54f9, 1rem -1rem 4rem #bd54f9, 2rem -1rem 4rem #bd54f9;
+
+    &::first-letter {
+      text-shadow: 0 0 2rem #e800ff, 1rem 1rem 2rem #e800ff, -1rem 1rem 2rem #e800ff, 1rem -1rem 2rem #e800ff, -1rem -1rem 2rem #e800ff;
+      position: relative;
+      z-index: 15234;
+    }
   }
 
   .leaderboard-table__header-row {
@@ -11,18 +16,18 @@
     box-shadow: 0 0 4rem rgba(238, 58, 255, 0.83);
   }
 
-  .leaderboard-table__td_rank {
+  .leaderboard-table__td_rank .td-inner{
     background: #bc52ff;
     color: #fff;
     text-shadow: 2px 2px 0 #723d90, -2px 2px 0 #723d90, 2px -2px 0 #723d90, -2px -2px 0 #723d90;
   }
 
-  .leaderboard-table__td_rank-first {
+  .leaderboard-table__td_rank-first .td-inner {
     text-shadow: 3px 3px 0 #ffddc9, -3px 3px 0 #ffddc9, 3px -3px 0 #ffddc9,  -3px -3px 0 #ffddc9;
   }
 
 
-  .leaderboard-table__td_rank-second, .leaderboard-table__td_rank-third {
+  .leaderboard-table__td_rank-second .td-inner, .leaderboard-table__td_rank-third .td-inner {
     text-shadow: none !important;
   }
 
@@ -45,7 +50,7 @@
       background-color: transparent;
     }
 
-    .leaderboard-table__td:nth-child(1) {
+    .leaderboard-table__td:nth-child(1) .td-inner{
       background: #ff5937;
       color: #291c46;
     }
