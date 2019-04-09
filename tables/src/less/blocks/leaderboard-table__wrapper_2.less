@@ -1,5 +1,5 @@
 .leaderboard-table__wrapper_2 {
-  background: url('../images/leaderboard-table/bg2.png') no-repeat center / cover;
+  background: url("../images/leaderboard-table/bg2.png") no-repeat center / cover;
 
   .leaderboard-table__header-row {
     background-image: linear-gradient(to right, #9242ff 0%, #ffaa5f 50%, #9242ff 100%);
@@ -12,11 +12,11 @@
   }
 
   .leaderboard-table__td_rank-first {
-    text-shadow: 3px 3px 0 #ffddc9, -3px 3px 0 #ffddc9, 3px -3px 0 #ffddc9,  -3px -3px 0 #ffddc9;
+    text-shadow: 3px 3px 0 #ffddc9, -3px 3px 0 #ffddc9, 3px -3px 0 #ffddc9, -3px -3px 0 #ffddc9;
   }
 
-
-  .leaderboard-table__td_rank-second, .leaderboard-table__td_rank-third {
+  .leaderboard-table__td_rank-second,
+  .leaderboard-table__td_rank-third {
     text-shadow: none !important;
   }
 
@@ -27,13 +27,15 @@
 
   .leaderboard-table__row:nth-child(3) {
     .leaderboard-table__td:nth-child(n + 2) {
-      text-shadow: 3px 3px 0 #7a3e77, -3px 3px 0 #7a3e77, 3px -3px 0 #7a3e77,  -3px -3px 0 #7a3e77;
+      text-shadow: 3px 3px 0 #7a3e77, -3px 3px 0 #7a3e77, 3px -3px 0 #7a3e77, -3px -3px 0 #7a3e77, 2.5px 2.5px 0 #7a3e77, -2.5px 2.5px 0 #7a3e77, 2.5px -2.5px 0 #7a3e77, -2.5px -2.5px 0 #7a3e77;
     }
   }
 
-  .leaderboard-table__row:nth-child(3), .leaderboard-table__row:nth-child(4), .leaderboard-table__row:nth-child(5){
+  .leaderboard-table__row:nth-child(3),
+  .leaderboard-table__row:nth-child(4),
+  .leaderboard-table__row:nth-child(5) {
     background-image: linear-gradient(to right, #ff6e42 0%, #c15fff 50%, #ff6e42 100%);
-    box-shadow: 0 0 4rem rgba(249, 173, 84, 0.76), inset 0 0 2rem rgba(255, 39, 0, 0.5);
+    box-shadow: 0 0 4rem rgba(249, 173, 84, 0.76), inset 0 0 4rem rgba(255, 39, 0, 0.5);
 
     .leaderboard-table__td {
       background-color: transparent;
@@ -43,7 +45,5 @@
       background: #ff5937;
       color: #291c46;
     }
-
   }
-
 }
