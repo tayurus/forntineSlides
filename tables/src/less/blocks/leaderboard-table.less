@@ -6,34 +6,38 @@
 .leaderboard-table__wrapper {
   max-height: 100vh;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .leaderboard-table {
   width: 97%;
   border-collapse: separate;
-  border-spacing: 0 .9vh;
+  border-spacing: 0 .9rem;
   text-align: left;
-  padding-left: 7vh;
+  padding-left: 7rem;
 
   &__top {
     display: flex;
     align-items: center;
-    padding-top: 1vh;
-    margin-bottom: 1vh;
-    margin-left: 4vh;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 7rem;
   }
 
   &__logo {
-    height: 15vh;
+    height: 15rem;
     width: 11vw;
     background: url('../images/leaderboard-table/logo.png') no-repeat center / contain;
-    margin-right: 15vw;
+    margin-right: 15rem;
+    align-self: flex-start;
   }
 
   &__fortnite {
     width: 10vw;
-    height: 4vh;
-    margin: 0 auto 3vh auto;
+    height: 4rem;
+    margin: 0 auto 3rem auto;
     background: url('../images/leaderboard-table/fortnite.png') no-repeat center / contain;
   }
 
@@ -45,17 +49,17 @@
   &__time {
     color: #ffffff;
     text-transform: uppercase;
-    line-height: 6vh;
-    font-size: 7vh;
-    margin-right: 2vh;
+    line-height: 6rem;
+    font-size: 7rem;
+    margin-right: 2rem;
   }
 
   &__title {
     color: #ffffff;
     font-weight: 400;
     text-transform: uppercase;
-    line-height: 4.5vh;
-    font-size: 5.5vh;
+    line-height: 4.5rem;
+    font-size: 5.5rem;
   }
 
   &__header-row {
@@ -74,19 +78,19 @@
     box-shadow: 0 0 3px rgba(57, 23, 103, 0.6);
     &:nth-child(3) {
       td {
-        font-size: 5vh;
+        font-size: 5rem;
 
         @media (max-width:992px) {
-          font-size: 4vh;
+          font-size: 4rem;
         }
       }
 
       td:first-child {
         text-transform: uppercase;
-        font-size: 6vh;
+        font-size: 6rem;
 
         @media (max-width:992px) {
-          font-size: 4vh;
+          font-size: 4rem;
         }
       }
     }
@@ -99,34 +103,34 @@
   }
 
   &__th {
-    font-size: 4.5vh;
-    padding-top: 1.5vh;
-    padding-bottom: 1.5vh;
-    line-height: 4.5vh;
+    font-size: 4.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    line-height: 4.5rem;
     text-transform: uppercase;
     color: #75f7ff;
-    letter-spacing: -.2vh;
+    letter-spacing: -.2rem;
     text-shadow: 2px 2px 0 #003658, -2px 2px 0 #003658, 2px -2px 0 #003658, -2px -2px 0 #003658;
 
     &_rank {
-      padding-left: 1vh;
+      padding-left: 1rem;
     }
 
     &_player {
-      padding-left: 2.5vh;
+      padding-left: 2.5rem;
     }
 
     @media (max-width:992px) {
-      font-size: 4vh;
+      font-size: 4rem;
     }
   }
 
   &__country {
-    min-width: 5vh;
-    max-width: 5vh;
-    height: 5vh;
+    min-width: 5rem;
+    max-width: 5rem;
+    height: 5rem;
     position: absolute;
-    left: -6vh;
+    left: -6rem;
     top: 50%;
     transform: translateY(-50%);
     background-repeat: no-repeat;
@@ -138,17 +142,17 @@
     position: relative;
     vertical-align: middle;
     color: #ffffff;
-    font-size: 4vh;
+    font-size: 4rem;
     font-weight: 700;
     background: #8b35ff;
 
     @media (max-width:992px) {
-      font-size: 3vh;
+      font-size: 3rem;
     }
 
     &_empty {
       background: none !important;
-      height: 2vh;
+      height: 2rem;
     }
 
     &_rank {
@@ -156,7 +160,7 @@
       color: #291c46;
       text-align: center;
       text-transform: lowercase;
-      width: 7vh;
+      width: 7rem;
       font-family: "Brandon Grotesque";
 
       @media (max-width: 767px) {
@@ -167,32 +171,32 @@
 
     &_rank-first {
       text-shadow: 3px 3px 0 #ffddc9, -3px 3px 0 #ffddc9, 3px -3px 0 #ffddc9,  -3px -3px 0 #ffddc9;
-      font-size: 7.5vh !important;
+      font-size: 7.5rem !important;
       &:after {
         text-shadow: 2px 2px 0 #ffddc9, -2px 2px 0 #ffddc9, 2px -2px 0 #ffddc9,  -2px -2px 0 #ffddc9;
       }
     }
 
     &_rank-first, &_rank-second, &_rank-third {
-      font-size: 5.5vh;
+      font-size: 5.5rem;
       font-weight: 400;
       color: #fffdff;
       line-height: 0;
       position: relative;
       text-align: left;
-      padding-left: 1vh;
+      padding-left: 1rem;
 
       &:after {
         position: absolute;
         content: 'st';
-        font-size: 3vh;
+        font-size: 3rem;
         font-weight: 400;
         color: #291c46;
-        top: 1.5vh;
+        top: 1.5rem;
         text-transform: lowercase;
         // font-family: "Bebas Neue Bold";
         @media (max-width:767px) {
-          margin-left: 2vh;
+          margin-left: 2rem;
         }
       }
     }
@@ -200,26 +204,26 @@
     &_rank-second:after {
       content: 'nd';
       text-transform: lowercase;
-      font-size: 2vh;
+      font-size: 2rem;
 
       @media (max-width:767px) {
-        margin-left: 3vh !important;
+        margin-left: 3rem !important;
       }
     }
 
     &_rank-third:after {
       content: 'rd';
       text-transform: lowercase;
-      font-size: 2vh;
+      font-size: 2rem;
 
       @media (max-width:767px) {
-        margin-left: 3vh !important;
+        margin-left: 3rem !important;
       }
     }
 
     &_player {
-      padding-left: 4vh;
-      padding-right: 6vh;
+      padding-left: 4rem;
+      padding-right: 6rem;
 
       @media (max-width: 767px) {
         padding-left: 50%;
@@ -227,7 +231,7 @@
     }
 
     &_center {
-      padding-right: 4vh;
+      padding-right: 4rem;
     }
   }
 
