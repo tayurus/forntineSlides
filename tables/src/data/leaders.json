@@ -59,6 +59,66 @@
       "player" : "SMOKEDSHIP",
       "flag" : "ru",
       "centerName" : "SMOKEDSHIP"
+    },
+    {
+      "rank" : "1",
+      "player" : "SMOKEDSHIP",
+      "flag" : "ru",
+      "centerName" : "SMOKEDSHIP"
+    },
+    {
+      "rank" : "2",
+      "player" : "Kankicks",
+      "flag" : "ua",
+      "centerName" : "SMOKEDSHIP"
+    },
+    {
+      "rank" : "3",
+      "player" : "PsychoAnalyzer8",
+      "flag" : "gr",
+      "centerName" : "SMOKEDSHIP"
+    },
+    {
+      "rank" : "4",
+      "player" : "Ross412",
+      "flag" : "ge",
+      "centerName" : "SMOKEDSHIP"
+    },
+    {
+      "rank" : "5",
+      "player" : "Killer576",
+      "flag" : "us",
+      "centerName" : "SMOKEDSHIP"
+    },
+    {
+      "rank" : "6",
+      "player" : "Joker_x_Joker",
+      "flag" : "kz",
+      "centerName" : "SMOKEDSHIP"
+    },
+    {
+      "rank" : "7",
+      "player" : "Ninja_Sotgun",
+      "flag" : "pl",
+      "centerName" : "SMOKEDSHIP"
+    },
+    {
+      "rank" : "8",
+      "player" : "ChickenDinnerxx",
+      "flag" : "jp",
+      "centerName" : "SMOKEDSHIP"
+    },
+    {
+      "rank" : "9",
+      "player" : "RogueStar",
+      "flag" : "as",
+      "centerName" : "SMOKEDSHIP"
+    },
+    {
+      "rank" : "10",
+      "player" : "SMOKEDSHIP",
+      "flag" : "ru",
+      "centerName" : "SMOKEDSHIP"
     }
   ]
 }

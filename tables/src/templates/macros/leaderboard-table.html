@@ -1,58 +1,72 @@
 {% macro leaderboard_table(leadersData, type, time, title) %}
 
-<div class="leaderboard-table__wrapper leaderboard-table__wrapper_{{type}}">
 
-  <div class="leaderboard-table__top">
-    <div class="leaderboard-table__logo"></div>
-    <div class="leaderboard-table__info">
-      <div class="leaderboard-table__fortnite"></div>
-      <div class="leaderboard-table__info-wrapper">
-        <div class="leaderboard-table__time">
-          <span>{{time}}</span>
+
+  <div class="leaderboard-table__wrapper leaderboard-table__wrapper_{{type}}">
+
+    <div class="leaderboard-table__top">
+      <div class="leaderboard-table__logo"></div>
+      <div class="leaderboard-table__info">
+        <div class="leaderboard-table__fortnite"></div>
+        <div class="leaderboard-table__info-wrapper">
+          <div class="leaderboard-table__time">
+            <span>{{time}}</span>
+          </div>
+          <div class="leaderboard-table__title">{{title}}</div>
         </div>
-        <div class="leaderboard-table__title">{{title}}</div>
       </div>
     </div>
-  </div>
 
-  <table class="leaderboard-table">
-    <tr class="leaderboard-table__header-row">
-      <th class="leaderboard-table__th leaderboard-table__th_rank">RANK</th>
-      <th class="leaderboard-table__th leaderboard-table__th_player">PLAYER</th>
-      <th class="leaderboard-table__th">CENTER <br/> NAME</th>
-      <th class="leaderboard-table__th">GAMES <br /> PLAYED</th>
-      <th class="leaderboard-table__th">WINS</th>
-      <th class="leaderboard-table__th">KILLS</th>
-      <th class="leaderboard-table__th">TOP 5 <br /> FINISHES</th>
-      <th class="leaderboard-table__th">TOP 10 <br /> FINISHES</th>
-      <th class="leaderboard-table__th">TOP 25 <br /> FINISHES</th>
-      <th class="leaderboard-table__th">POINTS</th>
-    </tr>
+    {% for i in range(0, 2 ) %}
 
-    <tr class="leaderboard-table__row leaderboard-table__row_empty">
-      <td class="leaderboard-table__td leaderboard-table__td_empty"colspan="10"></td>
-    </tr>
+      <div class=" {{'leaderboard-table__scroll-fake' if i == 1 else 'leaderboard-table__scroll'}}">
+        <table class="leaderboard-table">
+          <tr class="leaderboard-table__header-row">
+            <th class="leaderboard-table__th leaderboard-table__th_rank">RANK</th>
+            <th class="leaderboard-table__th leaderboard-table__th_player">PLAYER</th>
+            <th class="leaderboard-table__th">CENTER <br/> NAME</th>
+            <th class="leaderboard-table__th">GAMES <br /> PLAYED</th>
+            <th class="leaderboard-table__th">WINS</th>
+            <th class="leaderboard-table__th">KILLS</th>
+            <th class="leaderboard-table__th">TOP 5 <br /> FINISHES</th>
+            <th class="leaderboard-table__th">TOP 10 <br /> FINISHES</th>
+            <th class="leaderboard-table__th">TOP 25 <br /> FINISHES</th>
+            <th class="leaderboard-table__th">POINTS</th>
+          </tr>
 
-    {% for leader in leadersData %}
-    <tr class="leaderboard-table__row">
+          <tr class="leaderboard-table__row leaderboard-table__row_empty">
+            <td class="leaderboard-table__td leaderboard-table__td_empty"colspan="10"></td>
+          </tr>
 
-      <td class="leaderboard-table__td leaderboard-table__td_rank {{'leaderboard-table__td_rank-first' if leader.rank == '1'}} {{'leaderboard-table__td_rank-second' if leader.rank == '2'}} {{'leaderboard-table__td_rank-third' if leader.rank == '3'}}">
-        <span class="leaderboard-table__country flag-icon-{{leader.flag}}"></span>
-        <div class="td-inner">{{leader.rank}}</div>
-      </td>
-      <td class="leaderboard-table__td leaderboard-table__td_player"><div class="td-inner">{{leader.player}}</div></td>
-      <td class="leaderboard-table__td leaderboard-table__td_center"><div class="td-inner">{{leader.centerName}}</div></td>
-      <td class="leaderboard-table__td"><div class="td-inner">1000</div></td>
-      <td class="leaderboard-table__td"><div class="td-inner">1000</div></td>
-      <td class="leaderboard-table__td"><div class="td-inner">1000</div></td>
-      <td class="leaderboard-table__td"><div class="td-inner">1000</div></td>
-      <td class="leaderboard-table__td"><div class="td-inner">1000</div></td>
-      <td class="leaderboard-table__td"><div class="td-inner">1000</div></td>
-      <td class="leaderboard-table__td"><div class="td-inner">1000</div></td>
-    </tr>
+          {% for leader in leadersData %}
+          <tr class="leaderboard-table__row">
+
+            <td class="leaderboard-table__td leaderboard-table__td_rank {{'leaderboard-table__td_rank-first' if leader.rank == '1'}} {{'leaderboard-table__td_rank-second' if leader.rank == '2'}} {{'leaderboard-table__td_rank-third' if leader.rank == '3'}}">
+              <span class="leaderboard-table__country flag-icon-{{leader.flag}}"></span>
+              <div class="td-inner">{{leader.rank}}</div>
+            </td>
+            <td class="leaderboard-table__td leaderboard-table__td_player"><div class="td-inner">{{leader.player}}</div></td>
+            <td class="leaderboard-table__td leaderboard-table__td_center"><div class="td-inner">{{leader.centerName}}</div></td>
+            <td class="leaderboard-table__td"><div class="td-inner">1000</div></td>
+            <td class="leaderboard-table__td"><div class="td-inner">1000</div></td>
+            <td class="leaderboard-table__td"><div class="td-inner">1000</div></td>
+            <td class="leaderboard-table__td"><div class="td-inner">1000</div></td>
+            <td class="leaderboard-table__td"><div class="td-inner">1000</div></td>
+            <td class="leaderboard-table__td"><div class="td-inner">1000</div></td>
+            <td class="leaderboard-table__td"><div class="td-inner">1000</div></td>
+          </tr>
+          {% endfor %}
+
+        </table>
+      </div>
+
     {% endfor %}
 
-  </table>
-</div>
+
+  </div>
+
+
+
+
 
 {% endmacro %}
