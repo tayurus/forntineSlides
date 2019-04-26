@@ -166,8 +166,7 @@
   margin-bottom: 15px;
 }
 
-.slide__game-item::after {
-  content: '';
+.slide__item-underline {
   position: absolute;
   width: 100%;
   height: 2px;
